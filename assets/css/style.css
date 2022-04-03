@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: darkcyan;
+    background-image: linear-gradient(to right, #293a57, #5572a6);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -21,7 +21,6 @@ header {
 .header-title {
     font-weight: bold;
     font-size: 26px;
-    color: darkblue;
     margin: 0;
     padding: 25px 25px 0px 25px;
 
@@ -50,9 +49,35 @@ header {
 
 
 .hero {
-    background-color: darkcyan;
-    border-top: 5px darkblue solid;
-    border-bottom: 5px darkblue solid;
+    background-image: linear-gradient(to left, #5572a6, #293a57);
+    display: flex;
 }
 
+.aboutme {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    padding: 25px;
+    font-size: 26px;
+}
+
+.hero-text img {
+    justify-content: left;
+    width: 25%;
+    padding: 25px;
+}
+
+.aboutme2 {
+    justify-content: left;
+    display: flex;
+    width: 75%;
+    float: right;
+    text-align: justify;
+    padding: 25px;
+}
+
+.worksheader {
+    display: flex;
+    justify-content: center;
+}
 
