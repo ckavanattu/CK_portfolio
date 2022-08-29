@@ -1,83 +1,202 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: lightblue;
-}
-
 header {
     background-image: linear-gradient(to right, #293a57, #5572a6);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     top: 0;
-
+    position: -webkit-sticky;
+    position: sticky;
+    align-items:flex-end;
+    width: 100%;
+    border-bottom: solid black 10px;
 }
 
-.header-title {
+header h1 {
     font-weight: bold;
-    font-size: 26px;
+    font-size: 32px;
     margin: 0;
-    padding: 25px 25px 0px 25px;
+    padding: 100px 25px 5px 25px;
 
 }
 
-.nav {
-    padding: 5px 25px 25px 25px;
-    font-size: 18px;
-    color: black;
-    font-style: italic;
+nav {
+    display: flex;
+    width:40%
+
 }
 
-.nav ul {
-    list-style: none;
-}
-
-.navigation ul {
+nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     list-style: none;
-    padding:100px 25px 25px 25px;
-    width: 300px
+    margin: 0;
+    padding: 100px 25px 5px 25px;
+    font-size: 20px;
+    width: 100%;
+             
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    
+}
+
+#list:hover {
+    background-color: #293a57;
+}
+
+.section-header {
+    font-weight: bold;
+    font-size: 32px;
+    align-self: flex-start;
 }
 
 
-.hero {
-    background-image: linear-gradient(to left, #5572a6, #293a57);
-    display: flex;
-}
 
-.aboutme {
-    display: flex;
+#about-me {
+    display:flex;
+    justify-content: space-between;
+    padding: 25px 25px;
     flex-wrap: wrap;
-    justify-content: right;
-    padding: 25px;
-    font-size: 26px;
+    background-image: linear-gradient(to right, #293a57, #5572a6);
+    border: solid black 10px;
+    
 }
 
-.hero-text img {
-    justify-content: left;
-    width: 25%;
-    padding: 25px;
-}
-
-.aboutme2 {
-    justify-content: left;
+#about-me-info {
     display: flex;
-    width: 75%;
-    float: right;
-    text-align: justify;
-    padding: 25px;
+    justify-content: space-between;
+}
+#about-me-picture {
+    height:300px;
+    padding:0px 10px;
+    width: 40%
+}
+#about-me-picture img {
+    max-height: 100%;
+    object-fit:contain
 }
 
-.worksheader {
+#about-me-text {
     display: flex;
-    justify-content: center;
+    align-items: flex-end;
+    padding:0px 10px;
+    font-size: 20px;
+    width: 60%
 }
+
+
+
+#my-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* width: 100%; */
+    background-image: linear-gradient(to right, #293a57, #5572a6);
+    border: solid black 10px;
+    padding: 25px 25px;
+}
+
+#my-work-header {
+    align-self: flex-start;
+    padding: 25px 25px;
+}
+
+#main-project{
+    height: 250px;
+    width: 80%;
+    margin-bottom: 10px;
+    background-image: url(./images/filmpire.JPG);
+    
+}
+
+#other-projects-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    height: 600px;
+    
+}
+.project-design {
+    display: flex;
+    align-items: flex-start;
+    background-position: center;
+    background-size: cover;
+    border: solid #293a57 5px;
+}
+.project-design:hover {
+    box-shadow: 0px 0px 30px black;
+}
+#run-buddy {
+    background-image: url(./images/run-buddy.JPG);
+    height: 225px;
+    width: 30%;
+}
+
+#horiseon {
+    background-image: url(./images/horiseon.JPG);
+    height: 225px;
+    width: 30%;
+ }
+
+#github {
+    background-image: url(./images/github.JPG);
+    height: 225px;
+    width: 30%;
+}
+
+.other-project {
+    display: flex;
+    align-items: flex-end;
+    height:100%;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.project-title {
+    margin: 0;
+    background-color: #5572a6;
+    border: solid black 3px;
+       
+}
+
+#contact-me {
+    display:flex;
+    justify-content: space-between;
+    padding: 25px 25px;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to right, #293a57, #5572a6);
+    border: solid black 10px;
+}
+
+#social-media {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    padding: 50px;
+}
+
+.contact-me-style{
+    padding: 10px 0px 0px 10px;
+}
+.contact-me-style a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
 
